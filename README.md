@@ -1,6 +1,10 @@
-# Coding Amigos Demo Module
+# Coding Amigos Demo Component
 
-## Usage
+to show some nonsense to play with :-)
+
+# usage
+
+open [requirebin.com](http://requirebin.com) and copy paste the example from below
 
 ```js
 var demoCA = require('demo-ca')

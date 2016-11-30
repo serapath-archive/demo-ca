@@ -10,8 +10,8 @@ var welcomeBox = require('welcome-box')
 var anotherBox = require('another-box')
 
 function demoCA ({
-  theme : { color : color = '#00ffff' },
-  data  : { name  : name  = 'anonymous' }
+  theme : { color : color = '#00ffff' }   = {},
+  data  : { name  : name  = 'anonymous' } = {}
 } = {}) {
 
   var box1 = welcomeBox({ theme: { color: 'blue' }, data: { name: name } })
