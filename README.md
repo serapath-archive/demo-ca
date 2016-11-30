@@ -5,6 +5,6 @@
 ```js
 var demoCA = require('demo-ca')
 
-var element = demoCA({ color: 'yellow' })
+var element = demoCA({ theme : { color : 'yellow' } })
 document.body.appendChild(element)
 ```
