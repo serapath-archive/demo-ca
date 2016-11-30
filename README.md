@@ -8,7 +8,6 @@ open [requirebin.com](http://requirebin.com) and copy paste the example from bel
 
 ```js
 var demoCA = require('demo-ca')
-
-var element = demoCA({ theme : { color : 'yellow' } })
+var element = demoCA({ theme: { color: 'yellow' } })
 document.body.appendChild(element)
 ```
