@@ -1,0 +1,23 @@
+{
+  "name": "demo-ca",
+  "version": "3.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run www & npm run watch",
+    "www": "ecstatic ./ -p 5000 -H 'Access-Control-Allow-Origin: *'",
+    "watch": "watchify src/index.js -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] -o bundle.js -dv"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify-livereload": "^1.0.8",
+    "ecstatic": "^1.4.1",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "csjs-inject": "^1.0.0",
+    "dom-console": "^3.1.0",
+    "yo-yo": "^1.2.2"
+  }
+}
