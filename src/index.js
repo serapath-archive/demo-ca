@@ -1,4 +1,4 @@
-require('dom-console')({console:true, initAction: 'minimize'})
+require('dom-console')({ console: true, initAction: 'minimize' })
 
 var yo = require('yo-yo')
 var csjs =require('csjs-inject')
@@ -14,18 +14,11 @@ function demoCA ({
   data  : { name  : name  = 'anonymous' }
 } = {}) {
 
-  var box1 = welcomeBox({
-    theme : { color : 'blue'},
-    data  : { name  : name }
-  })
+  var box1 = welcomeBox({ theme: { color: 'blue' }, data: { name: name } })
+  var box2 = welcomeBox({ theme: { color: color }, data: { name: 'world!' } })
 
-  var box2 = welcomeBox({
-    theme : { color : color },
-    data  : { name  : 'world!' }
-  })
-
-  var var anotherbox1 = anotherBox({ data: { name: '123!' } })
-  var var anotherbox2 = anotherBox({ data: { name: 'aaa!' } })
+  var anotherbox1 = anotherBox({ data: { name: '123!' } })
+  var anotherbox2 = anotherBox({ data: { name: 'aaa!' } })
 
   var component = document.createElement('div')
 
