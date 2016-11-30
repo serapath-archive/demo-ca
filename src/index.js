@@ -9,13 +9,13 @@ module.exports = demoCA
 var welcomeBox = require('welcome-box')
 var anotherBox = require('another-box')
 
-function demoCA ({ // NOT SUPPORTED YET
-  theme : { color : color = '#00ffff' }   = {},
-  data  : { name  : name  = 'anonymous' } = {}
-} = {}) {
-// function demoCA (params) {
-//   var color = ((params||{}).theme||{}).color || '#00ffff'
-//   var name  = ((params||{}).data ||{}).name  || 'anonymous'
+// function demoCA ({ // NOT SUPPORTED YET
+//   theme : { color : color = '#00ffff' }   = {},
+//   data  : { name  : name  = 'anonymous' } = {}
+// } = {}) {
+function demoCA (params) {
+  var color = ((params||{}).theme||{}).color || '#00ffff'
+  var name  = ((params||{}).data ||{}).name  || 'anonymous'
 
   var box1 = welcomeBox({ theme: { color: 'blue' }, data: { name: name } })
   var box2 = welcomeBox({ theme: { color: color }, data: { name: 'world!' } })

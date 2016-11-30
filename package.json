@@ -1,6 +1,6 @@
 {
   "name": "demo-ca",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "description": "to show some nonsense to play with :-)",
   "main": "src/index.js",
   "scripts": {
